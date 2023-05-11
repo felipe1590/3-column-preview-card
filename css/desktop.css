@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@media (min-width: 1200px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .card {
+        height: 400px;
+        padding: 35px;
+    }
+
+    .card:nth-child(1) {
+        background: var(--cor01);
+        border-radius: 7px 0 0 7px;
+    }
+    
+    .card:nth-child(3) {
+        background: var(--cor03);
+        border-radius: 0 7px 7px 0;
+    }
+    
+}

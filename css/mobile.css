@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Primary */
+    --cor01: hsl(31, 77%, 52%);
+    --cor02: hsl(184, 100%, 22%);
+    --cor03: hsl(179, 100%, 13%);
+    /* Neutral */
+    --cor04: hsla(0, 0%, 100%, 0.75);
+    --cor05: hsl(0, 0%, 95%);
+    /* Fonts */
+    --font01: 'Big Shoulders Display', cursive;
+    --font02: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.9em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 60px auto;
+}
+
+.card {
+    height: 400px;
+    padding: 40px;
+}
+
+.card:nth-child(1) {
+    background: var(--cor01);
+    border-radius: 7px 7px 0 0;
+}
+
+.card:nth-child(2) {
+    background: var(--cor02);
+}
+
+.card:nth-child(3) {
+    background: var(--cor03);
+    border-radius: 0 0 7px 7px;
+}
+
+.card-icone {
+    padding-bottom: 30px;
+}
+
+.card-titulo {
+    font-family: var(--font01);
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--cor05);
+    text-transform: uppercase;
+    padding-bottom: 28px;
+}
+
+.card-descricao {
+    font-family: var(--font02);
+    font-weight: 400;
+    color: var(--cor05);
+    padding-bottom: 30px;
+}
+
+.card-botao-sedans, .card-botao-suvs, .card-botao-luxury {
+    font-family: var(--font02);
+    font-weight: 400;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card-botao-sedans {
+    color: var(--cor01);
+}
+
+.card-botao-suvs {
+    color: var(--cor02);
+}
+
+.card-botao-luxury {
+    color: var(--cor03);
+}
